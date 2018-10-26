@@ -38,6 +38,7 @@ class TitleAndMenu extends React.Component {
               <Link to="/" className="navbar-item">Home</Link>
               <Link to="/schedule/" className="navbar-item">Schedule</Link>
               <Link to="/equipment/" className="navbar-item">Equipment</Link>
+              <Link to="/rooms/" className="navbar-item">Rooms</Link>
               <Link to="/contact/" className="navbar-item">Contact</Link>
             </div>
           </div>
