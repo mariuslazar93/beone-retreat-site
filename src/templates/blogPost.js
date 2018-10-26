@@ -1,31 +1,23 @@
 import React from 'react';
-import { graphql, Link } from 'gatsby';
+import { graphql } from 'gatsby';
+import Layout from '../components/layout';
 
 const Template = (props) => {
   const {frontmatter} = props.data.markdownRemark;
   const {html} = props.data.markdownRemark;
-  console.log(props);
-  const {next, prev} = props.pageContext;
 
   return (
-    <div>
-      <h1>{frontmatter.title}</h1>
-      <div className='blogpost'
-        dangerouslySetInnerHTML={{__html: html}}
-      />
-      {
-        prev &&
-          <Link to={prev.frontmatter.path}>
-            {prev.frontmatter.title}
-          </Link>
-      }
-      {
-        next &&
-          <Link to={next.frontmatter.path}>
-            {next.frontmatter.title}
-          </Link>
-      }
-    </div>
+    <Layout>
+      <section className="section is-medium">
+        <div className="container">
+          <h1 className="title">{frontmatter.title}</h1>
+          <h2 className="subtitle">{frontmatter.subtitle}</h2>
+          <div className="blogpost"
+            dangerouslySetInnerHTML={{__html: html}}
+          />
+        </div>
+      </section>
+    </Layout>
   )
 }
 
@@ -34,7 +26,8 @@ export const query = graphql`
     markdownRemark(frontmatter: { path: { eq: $pathSlug } }) {
       html,
       frontmatter {
-        title
+        title,
+        subtitle
       }
     }
   }
