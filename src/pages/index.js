@@ -25,9 +25,9 @@ const Home = ({data}) => {
          </Link>
             </li>
             <li>
-            {/* <Link to="/rooms">
+            <Link to="/rooms">
             Room Assignments
-         </Link> */}
+         </Link>
             </li>
             <li>
             <Link to="/contact">
@@ -54,21 +54,21 @@ const Home = ({data}) => {
 //   })
 // }
 
-export const query = graphql`
-  query HomepageQuery {
-    allMarkdownRemark(
-      sort: {order: ASC, fields: [frontmatter___order]}
-    ) {
-      edges {
-        node {
-          frontmatter {
-            title
-            path
-          }
-        }
-      }
-    }
-  }
-`;
+// export const query = graphql`
+//   query HomepageQuery {
+//     allMarkdownRemark(
+//       sort: {order: ASC, fields: [frontmatter___order]}
+//     ) {
+//       edges {
+//         node {
+//           frontmatter {
+//             title
+//             path
+//           }
+//         }
+//       }
+//     }
+//   }
+// `;
 
 export default Home;
