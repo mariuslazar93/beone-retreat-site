@@ -1,5 +1,5 @@
 import React from "react"
-import { graphql, Link } from 'gatsby';
+import { Link } from 'gatsby';
 import Layout from '../components/layout';
 
 const Home = ({data}) => {
@@ -11,8 +11,11 @@ const Home = ({data}) => {
         <div className="container">
           <h1 className="title">Welcome!</h1>
           <h2 className="subtitle">
-            Here are some useful links for you...
+            The weekend away is coming up and we are really exited about it!
           </h2>
+          <p class="is-size-6">
+            Here are some useful links for you...
+          </p>
           <ul>
             <li>
             <Link to="/schedule">

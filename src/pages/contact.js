@@ -14,9 +14,7 @@ const Contact = () => {
       </section>
       <section className="section">
         <div className="container">
-          <h1>George - 123456789</h1>
-          <h1>George - 123456789</h1>
-          <h1>George - 123456789</h1>
+          <h1>Marius - 07731709279</h1>
         </div>
       </section>
     </Layout>

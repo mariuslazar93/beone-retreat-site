@@ -9,7 +9,7 @@ const Equipment = () => {
         <div className="container">
           <h1 className="title">Equipment</h1>
           <h2 className="subtitle">
-            You don't know what you need? Here are some ideas...
+            When you pack your bag, please remember to bring the following...
           </h2>
         </div>
       </section>
