@@ -11,7 +11,7 @@ const Home = ({data}) => {
         <div className="container">
           <h1 className="title">Welcome!</h1>
           <h2 className="subtitle">
-            The weekend away is coming up and we are really exited about it!
+            The weekend away is coming up and we are really excited about it!
           </h2>
           <p class="is-size-6">
             Here are some useful links for you...
