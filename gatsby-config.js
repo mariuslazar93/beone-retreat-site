@@ -1,7 +1,7 @@
 module.exports = {
   siteMetadata: {
-    title: 'BeOne Retreat',
-    description: 'Informations about BeOne Weekend Away',
+    title: 'Retreat',
+    description: 'Informations about a Retreat',
   },
   plugins: [
     'gatsby-plugin-react-helmet',
@@ -14,17 +14,11 @@ module.exports = {
         path: `${__dirname}/src/pages`,
       },
     },
-    // {
-    //   resolve: 'gatsby-plugin-typography',
-    //   options: {
-    //     pathToConfigModule: 'src/utils/typography.js',
-    //   },
-    // },
     {
       resolve: 'gatsby-plugin-manifest',
       options: {
-        name: "BeOne Retreat",
-        short_name: "BeOne Retreat",
+        name: "Retreat",
+        short_name: "Retreat",
         start_url: "/",
         background_color: "#266ea3",
         theme_color: "#95c9ed",

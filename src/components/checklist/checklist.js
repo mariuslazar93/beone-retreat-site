@@ -1,5 +1,6 @@
 import React from "react"
 import './checklist.scss';
+import checklists from './equipment-data.json';
 
 
 class Checkbox extends React.Component {
@@ -59,28 +60,7 @@ const Checklist = ({ list }) => {
 };
 
 const Checklists = () => {
-  const lists = [
-    {
-      title: 'Super Essentials',
-      items: [{name: 'Bible'}, {name: 'Notepad'}, {name: 'Pen'}],
-      type: 'danger',
-    },
-    {
-      title: 'Toiletries',
-      items: [{name: 'Toothbrush & Toothpaste'}, {name: 'Shower gel & Shampoo'}, {name: 'Towel(s)'}],
-      type: 'primary',
-    },
-    {
-      title: 'Clothing',
-      items: [{name: 'Warm & casual clothes'}, {name: 'Outdoor/Indoor shoes'}, {name: 'Waterproof coat'}],
-      type: 'info',
-    },
-    {
-      title: 'Others',
-      items: [{name: 'Snaks [NO NUTS PLEASE]'}, {name: 'Medication'}, {name: 'Umbrella'}],
-      type: 'warning',
-    },
-  ];
+  const lists = checklists;
 
   return (
     <div className="columns is-multiline checklist">

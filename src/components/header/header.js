@@ -1,4 +1,4 @@
-import React from "react"
+import React from 'react';
 import { StaticQuery, graphql, Link } from 'gatsby';
 
 class TitleAndMenu extends React.Component {
@@ -46,7 +46,6 @@ class TitleAndMenu extends React.Component {
       </nav>
     );
   }
-
 };
 
 

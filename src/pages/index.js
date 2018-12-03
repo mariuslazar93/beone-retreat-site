@@ -3,8 +3,6 @@ import { Link } from 'gatsby';
 import Layout from '../components/layout';
 
 const Home = ({data}) => {
-  // const { edges } = data.allMarkdownRemark;
-
   return (
     <Layout>
       <section className="section is-medium">
@@ -18,24 +16,24 @@ const Home = ({data}) => {
           </p>
           <ul>
             <li>
-            <Link to="/schedule">
-            The schedule of the event
-         </Link>
+              <Link to="/schedule">
+                The schedule of the event
+              </Link>
             </li>
             <li>
-            <Link to="/equipment">
-            What you should bring with you
-         </Link>
+              <Link to="/equipment">
+                What you should bring with you
+              </Link>
             </li>
             <li>
-            <Link to="/rooms">
-            Room Assignments
-         </Link>
+              <Link to="/rooms">
+                Room Assignments
+              </Link>
             </li>
             <li>
-            <Link to="/contact">
-            If you need to contact us, try here
-         </Link>
+              <Link to="/contact">
+                If you need to contact us, try here
+              </Link>
             </li>
           </ul>
         </div>
@@ -43,35 +41,5 @@ const Home = ({data}) => {
     </Layout>
   );
 };
-
-// {
-//   edges.map(edge => {
-//     const { frontmatter } = edge.node;
-//     return (
-//       <div key={frontmatter.path}>
-//         <Link to={frontmatter.path}>
-//           {frontmatter.title}
-//         </Link>
-//       </div>
-//     );
-//   })
-// }
-
-// export const query = graphql`
-//   query HomepageQuery {
-//     allMarkdownRemark(
-//       sort: {order: ASC, fields: [frontmatter___order]}
-//     ) {
-//       edges {
-//         node {
-//           frontmatter {
-//             title
-//             path
-//           }
-//         }
-//       }
-//     }
-//   }
-// `;
 
 export default Home;
